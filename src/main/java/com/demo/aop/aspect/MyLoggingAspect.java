@@ -15,6 +15,9 @@ public class MyLoggingAspect {
     @Pointcut("execution(* com.demo.aop.*.addAccount())")
     private void getter() {}
 
+    @Pointcut("execution(* com.demo.aop.*.addAccount())")
+    private void setter() {}
+
     // @Before("forDaoPackage() && !getter")
     public void addbefore()
     {
