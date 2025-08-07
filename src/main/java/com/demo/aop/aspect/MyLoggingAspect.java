@@ -16,10 +16,10 @@ public class MyLoggingAspect {
     private void getter() {}
 
     // @Before("forDaoPackage() && !getter")
-    // public void addbefore()
-    // {
-    //     System.out.println("\n===>logged successfully before adding account");
-    // }
+    public void addbefore()
+    {
+        System.out.println("\n===>logged successfully before adding account");
+    }
 
     @Before("forDaoPackage()")
     public void performApiAnalytics() {
